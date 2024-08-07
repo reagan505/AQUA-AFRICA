@@ -1,0 +1,253 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(../aq\ 4.jfif);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #333;
+}
+
+header.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+}
+
+header .logo {
+  font-size: 2em;
+  margin: 0;
+}
+
+header .navlinks {
+  display: flex;
+  gap: 1em;
+}
+
+header .navlinks a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+  transition: color 0.3s;
+}
+
+header .navlinks a:hover {
+  color: #80cbc4;
+}
+
+/* Section Styles */
+.places {
+  padding: 2em;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+  color: #0e1a3b;
+}
+
+.place-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1em;
+}
+
+.card {
+  background-color:rgb(149, 208, 231);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-content {
+  padding: 1em;
+}
+
+.card-title {
+  font-size: 1.75em;
+  margin: 0.5em 0;
+  color: #0b455c;
+}
+
+.card-description {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 1em;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #2869a5;
+  color: #fff;
+  padding: 0.75em 1.5em;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #17437c;
+}
+
+/* Booking Page Styles */
+.booking-page {
+  max-width: 600px;
+  margin: 2em auto;
+  padding: 2em;
+  background-color:rgb(149, 208, 231);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.booking-page h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.booking-page p {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 1.5em;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-form label {
+  font-size: 1em;
+  margin-bottom: 0.5em;
+  color: #333;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+  padding: 1em;
+  margin-bottom: 1em;
+  border: 1px solid #4e93cc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.booking-form button {
+  align-self: flex-start;
+}
+
+.back-btn {
+  background-color: #53bedf;
+  color: #000000;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 1em;
+  transition: background-color 0.3s;
+}
+
+.back-btn:hover {
+  background-color: #1786b9;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  header .navlinks {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  header .navlinks a {
+      margin-bottom: 0.5em;
+  }
+
+  .section-title {
+      font-size: 2em;
+  }
+
+  .place-cards {
+      grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+/* Footer Styling */
+footer {
+  background-color: #333; /* Dark background */
+  color: #f2f2f2; /* Light text color */
+  padding: 20px 0; /* Top and bottom padding */
+  font-family: Arial, sans-serif; /* Fallback font */
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+  justify-content: space-between; /* Space between columns */
+  max-width: 1200px; /* Container width */
+  margin: 0 auto; /* Center align */
+  padding: 0 20px; /* Side padding */
+}
+
+.footer-column {
+  flex: 1 1 200px; /* Flex grow, shrink, and base width */
+  margin: 10px 20px; /* Margin around columns */
+}
+
+.footer-column h1 {
+  font-size: 1.5em; /* Larger font for the title */
+  margin-bottom: 10px; /* Space below heading */
+}
+
+.footer-column p {
+  margin: 8px 0; /* Margin for paragraphs */
+}
+
+.footer-column a {
+  color: #f2f2f2; /* Link color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s; /* Smooth transition */
+}
+
+.footer-column a:hover {
+  color: #ff6347; /* Change color on hover */
+}
+
+.footer-bottom {
+  text-align: center; /* Center text */
+  margin-top: 20px; /* Space above */
+  border-top: 1px solid #444; /* Top border */
+  padding-top: 10px; /* Padding above text */
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column; /* Stack columns vertically */
+      text-align: center; /* Center align text */
+  }
+
+  .footer-column {
+      margin: 10px 0; /* Adjust margin for small screens */
+  }
+}

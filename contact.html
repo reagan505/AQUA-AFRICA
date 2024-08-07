@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Aqua Africa Tourism</title>
+    <link rel="stylesheet" href="./contact.css">
+    <link rel="icon" type="image/png" href="/logo.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/logo.png" sizes="16x16">
+    <link rel="apple-touch-icon" href="/logo.png">
+    <link rel="manifest" href="/path/to/site.webmanifest">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Aqua Africa Tourism</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="./destinations/destinations.html">destinations</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Discover the Beauty of Africa</h2>
+            <p>Experience the best of African tourism with Aqua Africa.</p>
+            <a href="#services" class="btn">Explore Services</a>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <h3>Guided Tours</h3>
+                    <p>Explore Africa with our expert guides. From safaris to cultural tours, we offer a variety of experiences.</p>
+                </div>
+                <div class="card">
+                    <h3>Custom Itineraries</h3>
+                    <p>We create personalized travel plans tailored to your interests and schedule.</p>
+                </div>
+                <div class="card">
+                    <h3>Luxury Accommodations</h3>
+                    <p>Stay in the finest lodges and hotels, handpicked for their comfort and quality.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <form class="contact-form" action="contact_form_submission.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-item">
+                <h1>AQUA AFRICA</h1>
+                <p>Discover Africa’s hidden gems with Aqua Africa Tourism.</p>
+            </div>
+            <div class="footer-item">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h3>Connect</h3>
+                <ul>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Connect</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <section class="footer-bottom">
+            <p>All Rights Reserved</p>
+        </section>
+    </footer>
+</body>
+</html>

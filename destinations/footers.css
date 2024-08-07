@@ -1,0 +1,60 @@
+/* Footer Styling */
+footer {
+  background-color: #333; /* Dark background */
+  color: #f2f2f2; /* Light text color */
+  padding: 20px 0; /* Top and bottom padding */
+  font-family: Arial, sans-serif; /* Fallback font */
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+  justify-content: space-between; /* Space between columns */
+  max-width: 1200px; /* Container width */
+  margin: 0 auto; /* Center align */
+  padding: 0 20px; /* Side padding */
+}
+
+.footer-column {
+  flex: 1 1 200px; /* Flex grow, shrink, and base width */
+  margin: 10px 20px; /* Margin around columns */
+}
+
+.footer-column h1 {
+  font-size: 1.5em; /* Larger font for the title */
+  margin-bottom: 10px; /* Space below heading */
+}
+
+.footer-column p {
+  margin: 8px 0; /* Margin for paragraphs */
+}
+
+.footer-column a {
+  color: #f2f2f2; /* Link color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s; /* Smooth transition */
+}
+
+.footer-column a:hover {
+  color: #ff6347; /* Change color on hover */
+}
+
+.footer-bottom {
+  text-align: center; /* Center text */
+  margin-top: 20px; /* Space above */
+  border-top: 1px solid #444; /* Top border */
+  padding-top: 10px; /* Padding above text */
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column; /* Stack columns vertically */
+      text-align: center; /* Center align text */
+  }
+
+  .footer-column {
+      margin: 10px 0; /* Adjust margin for small screens */
+  }
+}
+
+

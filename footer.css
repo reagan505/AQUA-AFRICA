@@ -1,0 +1,10 @@
+footer{
+    width: 80%;
+    margin: auto;
+    color: rgb(0, 0, 0);
+    margin-top: 6rem;
+}
+.footer-section{
+    display: flex;
+    justify-content: space-between;
+}
